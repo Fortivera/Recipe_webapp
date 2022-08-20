@@ -1,0 +1,41 @@
+body{
+  background-image: url('../trying.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+/* taking out the search bar from nav div */
+#logo{
+    width: auto;
+    padding-right: 2pc; 
+   } 
+   #homepage{
+    width: auto;
+    padding-right: 2pc;
+   }
+   #create-recipe{
+    width: auto;
+   }
+   #search-bar{
+    display: none;
+   }
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+  }
+ 
+form{
+  margin-top: 35%;
+  margin-left: 4%;
+  width: 800px;
+}
+.search-row{
+display: flex;
+
+} 
+#search-text{
+height: 50px;
+} 

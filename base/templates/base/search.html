@@ -1,0 +1,88 @@
+ 
+{% extends 'main.html' %}
+
+{% block content %}
+{% load static %}
+ 
+<link rel="stylesheet" href='{% static "styles/search.css" %}'> 
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            {% for recipe in query_recipes %}
+            <div class="col-sm-4 py-2">
+                    <a class="text-dark" href="">
+                        <div class="card mb-4 box-shadow">
+                            <div  class="card-body">
+                                {% if recipe.dish_img %}                 
+                                <a href="{% url 'show_selected_page' recipe.pk %}">   
+                                    <img class="img" src='{{recipe.dish_img.url}}' alt="Card image cap"  >                                    
+                                </a>
+                                {% endif %}
+                                <div class="dish-link-container">
+                                    <a class="dish-link" href="{% url 'show_selected_page' recipe.pk %}">
+                                        {{recipe.dish_name}}                                                                      
+                                    </a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>  
+
+<!-- <style>
+ body{
+    top: 100px;
+ }
+.box-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 30px;
+     
+} 
+.box{
+    width: 310px;
+    padding: 10px 10px 10px 30px;
+
+}
+.img-container{
+    width: 300px;
+    border: 1px solid grey;
+}
+img{
+    width: 100%;
+}
+ 
+</style>
+<main class="box-grid">
+    {% for recipe in query_recipes %}
+    <div class="box">
+        <div class="img-container">
+            {% if recipe.dish_img %}                 
+                <a href="{% url 'show_selected_page' recipe.pk %}">
+                    <img class="img" src='{% static "CHEESEBURGER SALAD WITH ANIMAL SAUCE DRESSING.jpg" %}' alt="Card image cap"  >    
+                    <!-- <img class="img" src='{{recipe.dish_img.url}}' alt="Card image cap"  >                                     -->
+                <!-- </a>
+            {% endif %}
+        </div>
+        <div class="box-text">
+            <a class="dish-link" href="{% url 'show_selected_page' recipe.pk %}">
+                {{recipe.dish_name}}                                                                      
+            </a>
+        </div>
+    </div>
+    {% endfor %} 
+</main> --> -->
+
+ 
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% load static %}
+
+ 
+<link rel="stylesheet" href="{% static 'styles/selected_recipe.css' %}">
+
+<div class="main-container">
+    <div class="dish-container">
+        <div class="dish-header">
+            <h2>
+                <p class="dish-header-wording">{{selected_recipe.dish_name}}</p>
+            </h2>
+        </div>
+        <div class="ingredients-header">
+            <h2>
+                <p class="ingredients-header-wording">Ingredients:</p>
+            </h2>
+        </div>
+        <div class ="ingredients">
+            <ul> 
+                {% for ingredient in selected_recipe.full_sentence_ingredients %}
+                    <li><p>{{ingredient}}</p></li>   
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="recipe-header">
+            <h3>
+                <p class="recipe-header-wording">Recipe:</p>
+            </h3>    
+        </div>
+        <div class="recipe-steps">
+            <ol> 
+                {% for step in selected_recipe.recipes %} 
+                    <li class="recipe-list"><p>{{step}}</p></li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+    <div class="media-container">
+        <div class="card">
+            <div class="img-border"></div>
+            {% if selected_recipe.dish_img %}
+            <img class="media-img" src= '{{selected_recipe.dish_img.url}}' alt="Card image cap">
+            {% endif %}
+        </div>
+    </div>    
+</div> 
+ 
+
+{% endblock %}

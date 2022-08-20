@@ -1,0 +1,26 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/nav_bar.css' %}">
+
+<nav class="nav-bar">
+  <div id="logo">
+    <img class="logo-img" src="{% static 'profile-cook.png' %}" alt="">
+  </div>
+  <div id="homepage">
+    <a id="homepage-text" class="navbar-brand" href="/">Home</a>
+  </div>
+  <div id="search-bar">
+      <form action="{% url 'show_searched_page' %}" method="post">
+      {% csrf_token %}
+        <div id="search-input">
+          <input class="form-control" id="search" type="search" placeholder="Search by recipe name or ingredients (eg: tomato lemon pasta)" name="searched">
+        </div>
+          
+    </form>
+  </div>
+  <div id="create-recipe">
+    <a id="create-recipe-text" class="nav-link" href="{% url 'show_create_recipe' %}">Create Recipe</a>
+  </div>
+</nav>
+
+ 
+ 

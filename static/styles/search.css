@@ -1,0 +1,50 @@
+*:focus {
+    outline: 0;
+    outline: none;
+}
+html {
+    -webkit-tap-highlight-color: transparent;
+} 
+.album{
+    padding-top: 4rem !important;
+} 
+.container{
+    max-width: 1440px;
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+.col-sm-4 {
+ 
+    width: 360px;
+    
+}
+.card-body{
+    height: 485px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+.dish-link-container{
+    margin: 1%;
+    text-align: center;
+    font-weight:normal;
+}
+.dish-link{
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    font-family: Sora, Aerial;
+    font-size: 1rem;
+    box-shadow: none;
+    align-items: center;
+}
+.dish-link:hover{
+    color: #3a9691;  
+}
+.img{
+    width: 100%;
+    box-shadow: none;  
+    vertical-align: middle;
+    object-fit: contain;
+    object-position: center;
+}

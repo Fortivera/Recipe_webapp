@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/create_recipe.css' %}">
+
+<div class="main-container">
+    <form class="recipe-form" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p class="recipe-p">
+            {{form.as_p}}
+        </p>
+       
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
+
