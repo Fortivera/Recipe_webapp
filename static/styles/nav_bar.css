@@ -1,65 +1,73 @@
 .nav-bar{
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
     flex-direction: row;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    align-items: center;
-    
     background-color: rgb(14, 155, 108);
     height: 55px;
     z-index:1;
     border-bottom: 3px solid rgb(12, 153, 106);
 }
-#logo{
-    width: 10%;
+#left-section{
+    display: flex;      
+}
+.img-container{
+    width: 60px;
+    margin-left: 30px;
+    margin-top: 2.5px;
     
 }
 .logo-img{    
-    width: 60px;
-    margin-left: 30px;
-    margin-top: 5px;
-    
+    width: 100%; 
 } 
+.middle-section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
 #homepage{
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #f8f8ff; 
     align-items: center;
-    justify-content: center;  
-    margin-right: 3.5%;  
+    justify-content: center;
+    color: #f8f8ff; 
+    width: 100px;
+    height: 53px; 
+    margin-right: 80px;
 }
+ 
 #homepage:hover{
     background-color:rgb(26, 167, 120);
-    height: 55px; 
-}
+}   
 #homepage-text{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 #search-bar{
+    align-items: center;
+    justify-content: center;
     font-size: auto;
     flex: 1;
-    align-items: center;
-     
-    margin-left: 200px;
-    margin-right: 200px;
+    max-width: 60%;
 }  
 #create-recipe{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     color: #f8f8ff;
-    text-align: end;
-    margin-right: 10%; 
+    width: 180px;
+    height: 53px;
 }
 #create-recipe-text{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 #create-recipe:hover{
     background-color:rgb(26, 167, 120);
-    height: 55px;
+}
+.right-section{
+    width: 10%;
 }

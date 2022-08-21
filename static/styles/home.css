@@ -1,26 +1,24 @@
 body{
   background-image: url('../trying.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 /* taking out the search bar from nav div */
-#logo{
-    width: auto;
-    padding-right: 2pc; 
-   } 
-   #homepage{
-    width: auto;
-    padding-right: 2pc;
-   }
-   #create-recipe{
-    width: auto;
-   }
-   #search-bar{
+.nav-bar{
+  display: flex;
+  }  
+  #left-section{
+    margin-right: 3px;
+  }
+  #search-bar{
     display: none;
    }
+  #homepage{
+    margin: 0;
+  }
   .main-container{
     display: flex;
     flex-direction: column;
@@ -38,4 +36,9 @@ display: flex;
 } 
 #search-text{
 height: 50px;
+opacity: 70%
 } 
+#search-text:focus{
+  opacity: 1;
+}
+ 

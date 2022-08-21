@@ -39,11 +39,11 @@
         </div>
     </div>
     <div class="media-container">
-        <div class="card">
-            <div class="img-border"></div>
-            {% if selected_recipe.dish_img %}
-            <img class="media-img" src= '{{selected_recipe.dish_img.url}}' alt="Card image cap">
-            {% endif %}
+            <div class="img-border">
+                {% if selected_recipe.dish_img %}
+                     <img class="media-img" src= '{{selected_recipe.dish_img.url}}' alt="Card image cap">
+                {% endif %}
+            </div>
         </div>
     </div>    
 </div> 

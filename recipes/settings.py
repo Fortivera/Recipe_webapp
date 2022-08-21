@@ -134,14 +134,12 @@ AWS_DEFAULT_ACL = None
 AWS_DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % (AWS_STORAGE_BUCKET_NAME)
 
-
 AWS_LOCATION = 'static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'  #in charge of storage when you push your static files to S3 when your run "python manage.py collectstatic"
-
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = 'media/'
@@ -152,8 +150,8 @@ DEFAULT_FILE_STORAGE = 'recipes.storages.MediaStorage'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')     #where you files will go during development command "python manage.py collectstatic"
 # STATIC_URL = '/static/'                                 #where {% load static %} takes static files from, its your directory
 # STATICFILES_DIRS = [
-#      os.path.join(BASE_DIR, 'static'),                  #used for additional apps that use static, you list them
-#      ]
+#       os.path.join(BASE_DIR, 'static'),                  #used for additional apps that use static, you list them
+#     ]
 # MEDIA_URL = '/media/'                                   #downloaded media by django's default is collected in media folder
 
 

@@ -1,9 +1,8 @@
- 
-.main-container{
+ .main-container{
     position: relative;
     top: 40px;
     display: grid;
-    grid-template-columns: 1fr 600px;
+    grid-template-columns: 60% 1fr;
     flex-grow: 1;
     width: 80%;
     margin-right: 10%;
@@ -13,10 +12,7 @@
     padding-top: 20px;  
     background-color: white;  
 }
-
 .dish-container{
-     
-     
     vertical-align: top;
     padding-right: 15px; 
     padding-left: 15px;
@@ -31,7 +27,7 @@
     font-weight: 600;
     text-align: center;
     text-decoration: underline;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 } 
 .ingredients-header{
     color: rgb(59, 64, 69);
@@ -47,27 +43,30 @@
     display: block;
 }
 .recipe-header-wording{
-    color: rgb(35, 38, 41);
-    
+    color: rgb(35, 38, 41); 
 }
 .recipe-steps{
     display: block;
     font-size: 1rem;
 }
 .media-container{
+    position: relative;
+    display: flex;
     vertical-align: top;
+    justify-content: end;
     padding-top: 10px;
     padding-left: 30px;
     padding-bottom: 20px;
-    padding: 10px 30px 20px 10px;
-    text-align: center;
+    padding: 10px 30px 20px 10px; 
 }
- 
 .img-border{
-    vertical-align: top;
-    width: 100px;
-    border-radius: 2px;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
 }
 .img{
-    width: 100%;
+    max-width:100%;
+    height:auto;
 }
