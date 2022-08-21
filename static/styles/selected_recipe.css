@@ -55,9 +55,9 @@
     vertical-align: top;
     justify-content: end;
     padding-top: 10px;
-    padding-left: 30px;
+     
     padding-bottom: 20px;
-    padding: 10px 30px 20px 10px; 
+   
 }
 .img-border{
     position: absolute;
@@ -66,7 +66,7 @@
     margin-right: auto;
     max-width: 600px;
 }
-.img{
+.media-img{
     max-width:100%;
-    height:auto;
+   
 }
