@@ -1,2 +1,2 @@
-# Just_Cook_webapp
+# Recipe_webapp
 Recipe website that allows to search by ingredient names
