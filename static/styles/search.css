@@ -22,12 +22,13 @@ body{
     position: absolute;
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 50px;
     column-gap: 35px;
     margin-left: 5%;
     margin-right: 5%; 
-} 
+}   
 .box{
     justify-content: center;
     align-items: center;
@@ -38,7 +39,6 @@ body{
     border-radius: 5px;
 } 
 .img-cont{
-    display: block;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -64,3 +64,14 @@ img{
 .dish-link:hover{
     color: #3a9691;  
 } 
+.error-search{
+     
+    position: absolute;
+    font-size: 1rem;  
+    font-family: Sora, Aerial; 
+    width: 450px;
+    margin-top: 30px;
+    
+    
+}
+ 

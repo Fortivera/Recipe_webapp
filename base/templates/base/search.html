@@ -22,6 +22,10 @@
                     </a>
                 </div>
         </div>
+        {% empty %}
+            <div class="error-search">
+                Nothing found...
+            </div>         
         {% endfor %} 
     </div>
 </main>
