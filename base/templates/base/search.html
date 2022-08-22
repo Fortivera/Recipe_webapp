@@ -5,13 +5,13 @@
  
 <link rel="stylesheet" href='{% static "styles/search.css" %}'> 
 
-<main class="base">
+
     <div class="content-container">
         {% for recipe in query_recipes %}
         <div class="box">
                 <div class="img-cont">
                     {% if recipe.dish_img %}                 
-                        <a href="{% url 'show_selected_page' recipe.pk %}">
+                        <a href="{% url 'show_selected_page' recipe.pk %}">              
                             <img class="img" src='{{recipe.dish_img.url}}' alt="Card image cap">                            
                         </a>
                     {% endif %}
@@ -28,7 +28,7 @@
             </div>         
         {% endfor %} 
     </div>
-</main>
+
  
 
 {% endblock %} -->
