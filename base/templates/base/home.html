@@ -8,11 +8,11 @@
 <title>Just Cook!</title>
 
 <!-- <div class="base-container"> -->
-  <form class="" action="{% url 'show_searched_page' %}" method="post">
+  <form class="search-form" action="{% url 'show_searched_page' %}" method="post">
   {% csrf_token %}
     <div class="search-row">
       <input id="search-text" class="form-control" type="search-bar" placeholder="Search by recipe name or ingredients (eg: tomato lemon pasta)" name="searched">
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <button id="search-button" class="btn btn-outline-success" type="submit">Search</button>
     </div>
   </form>
 <!-- </div> -->

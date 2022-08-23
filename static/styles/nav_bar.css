@@ -1,4 +1,4 @@
-.nav-bar{
+#nav-bar{
     display: grid;
     grid-template-columns: 10% 1fr 10%;
     flex-direction: row;
@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
     background-color: rgb(14, 155, 108);
-    height: 55px;
+    height: 3.4375rem;
     z-index:1;
     border-bottom: 3px solid rgb(12, 153, 106);
 }
@@ -23,7 +23,7 @@
 .logo-img{    
     width: 100%; 
 } 
-.middle-section{
+#middle-section{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,3 +71,4 @@
 .right-section{
     width: 10%;
 }
+

@@ -1,13 +1,14 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'styles/nav_bar.css' %}">
 
-<nav class="nav-bar">
+
+<nav id="nav-bar">
   <div id="left-section">
     <div class="img-container">
       <img class="logo-img" src="{% static 'profile-cook.png' %}" alt="">
     </div>
   </div>
-  <div class="middle-section">
+  <div id="middle-section">
     <div id="homepage">
       <div class="homepage-border">
         <a id="homepage-text" class="navbar-brand" href="/">Home</a>
@@ -25,8 +26,8 @@
       <a id="create-recipe-text" class="nav-link" href="{% url 'show_create_recipe' %}">Create Recipe</a>
     </div>
   </div>
-  <div class="right-section"></div>
+  <div id="right-section"></div>
 </nav>
 
- 
+
  
