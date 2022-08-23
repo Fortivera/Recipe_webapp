@@ -40,9 +40,8 @@
     </div>
     <div class="media-container">
             <div class="img-border">
-                {% if selected_recipe.dish_img %}    
-                <img class="media-img" src= '{%static "BÚN CHẢ.jpg" %}' alt="Card image cap">            
-                    <!-- <img class="media-img" src= '{{selected_recipe.dish_img.url}}' alt="Card image cap"> -->
+                {% if selected_recipe.dish_img %}     
+                    <img class="media-img" src= '{{selected_recipe.dish_img.url}}' alt="Card image cap">
                 {% endif %}
             </div>
         </div>

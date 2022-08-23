@@ -7,18 +7,13 @@
 <link rel="stylesheet" type="text/css" href="{% static 'styles/home.css' %}">
 <title>Just Cook!</title>
 
-<!-- <div class="base-container"> -->
-  <form class="search-form" action="{% url 'show_searched_page' %}" method="post">
-  {% csrf_token %}
-    <div class="search-row">
-      <input id="search-text" class="form-control" type="search-bar" placeholder="Search by recipe name or ingredients (eg: tomato lemon pasta)" name="searched">
-      <button id="search-button" class="btn btn-outline-success" type="submit">Search</button>
-    </div>
-  </form>
-<!-- </div> -->
-
- 
-
+<form class="search-form" action="{% url 'show_searched_page' %}" method="post">
+{% csrf_token %}
+  <div class="search-row">
+    <input id="search-text" class="form-control" type="search-bar" placeholder="Search by recipe name or ingredients (eg: tomato lemon pasta)" name="searched">
+    <button id="search-button" class="btn btn-outline-success" type="submit">Search</button>
+  </div>
+</form>
 
 
 {% endblock %}

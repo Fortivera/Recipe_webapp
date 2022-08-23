@@ -9,14 +9,11 @@
     <div class="content-container">
         {% for recipe in query_recipes %}
         <div class="box">
-                <!-- <div class="img-cont"> -->
                     {% if recipe.dish_img %}                 
-                        <a href="{% url 'show_selected_page' recipe.pk %}"> 
-                            <img class="img" src= '{%static "BÚN CHẢ.jpg" %}' alt="Card image cap">           
-                            <!-- <img class="img" src='{{recipe.dish_img.url}}' alt="Card image cap">                             -->
+                        <a href="{% url 'show_selected_page' recipe.pk %}">            
+                            <img class="img" src='{{recipe.dish_img.url}}' alt="Card image cap">                            
                         </a>
                     {% endif %}
-                <!-- </div> -->
                 <div class="box-text">
                     <a class="dish-link" href="{% url 'show_selected_page' recipe.pk %}">
                         {{recipe.dish_name}}                                                                      
@@ -30,4 +27,6 @@
         {% endfor %} 
     </div>
 </div>
+
+
 {% endblock %} 
