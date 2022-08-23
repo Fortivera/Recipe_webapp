@@ -114,9 +114,13 @@ body {
   align-content: center;
   border: 2px solid lightgrey;
   border-radius: 5px;
-  box-shadow: 0.1rem 0.15rem rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
-
+@media (max-width: 480px) {
+  .box {
+    box-shadow: none;
+  }
+}
 .stacked {
   display: grid;
 }
