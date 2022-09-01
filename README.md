@@ -1,7 +1,7 @@
 
-# "Just Cook It" recipe web application
+# ["Just Cook It"](https://just-cookit.herokuapp.com/)
 
-The Recipe web app filters recipes based on users inputted ingredients. It is also possible to find a recipe by a name and a combination of ingredients. This web app is a collection of culinary creations to which a user can also contribute by adding their own recipe with illustrations.
+This recipe web app filters recipes based on users inputted ingredients. It is also possible to find a recipe by a name and a combination of ingredients. This web app is a collection of culinary creations to which a user can also contribute by adding their own recipe with illustrations.
 
 
 ## Environment Variables
