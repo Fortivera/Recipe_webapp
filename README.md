@@ -28,13 +28,13 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm install
+  pip install requirements.txt
 ```
 
 Start the server
 
 ```bash
-  npm run start
+  python manage.py runserver
 ```
 
 
