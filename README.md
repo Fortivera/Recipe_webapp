@@ -19,13 +19,7 @@ Clone the project
   git clone https://github.com/Fortivera/Recipe_webapp.git
 ```
 
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
+Go to the project directory and install dependencies
 
 ```bash
   pip install requirements.txt
